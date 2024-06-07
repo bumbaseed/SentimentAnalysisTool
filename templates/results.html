@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Sentiment Analysis Result</title>
+    </head>
+    <body>
+        <h1>Sentiment Analysis Result</h1>
+        <p><strong>Input Text:</strong> {{ text }}</p>
+        <p><strong>Sentiment Scores:</strong></p>
+        <ul>
+            {% for res in sentiment %}
+            <li>{{ res['label'] }}: {{ res['score'] }}</li>
+            {% endfor %}
+        </ul>
+        <a href="/">Analyze another text</a>
+    </body>
+</html>
