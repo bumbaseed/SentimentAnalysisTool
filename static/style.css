@@ -1,43 +1,144 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #222831;
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f4;
 }
 
 h1 {
-    color: #333;
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
 }
 
 form {
     margin-bottom: 20px;
 }
 
-textarea {
+p {
+    color: #ffffff;
+}
+
+label {
+    color: #ffffff;
+}
+
+textarea.form-control {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+    border: 1px solid #00ADB5;
+    border-radius: .25rem;
+    background-color: #393E46; /* Change the background color here */
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    color: white;
+}
+
+
+textarea.form-control:focus {
+    border-color: #00ADB5;
+    background-color: #393E46;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+    color: white;
 }
 
 input[type="submit"] {
     padding: 10px 20px;
-    background-color: #5cb85c;
+    background-color: #00ADB5;
     color: #fff;
     border: none;
     cursor: pointer;
+    border-radius: .25rem;
+    transition: background-color .15s ease-in-out;
 }
 
 input[type="submit"]:hover {
-    background-color: #4cae4c;
+    background-color: #007e85;
 }
 
 a {
     color: #337ab7;
     text-decoration: none;
+    transition: color .15s ease-in-out;
 }
 
 a:hover {
+    color: #23527c;
     text-decoration: underline;
+}
+
+.list-group-item {
+    background-color: #393E46;
+    border: 1px solid #dee2e6;
+    color: white;
+}
+
+.card {
+    background-color: #393E46;
+    border: 1px solid #00ADB5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card .card-title {
+    color: #00ADB5;
+}
+
+.card .card-img-top {
+    border-radius: 0;
+    max-height: 300px;
+    object-fit: contain;
+    background-color: #222831;
+    padding: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color .15s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-success {
+    background-color: #00ADB5;
+    border: none;
+    transition: background-color .15s ease-in-out;
+}
+
+.btn-success:hover {
+    background-color: #007e85;
+}
+
+/* Custom spacing for form elements */
+.form-group {
+    margin-bottom: 1.5rem; /* Add spacing between form groups */
+}
+
+.text-center {
+    margin-bottom: 1.5rem; /* Add spacing below the submit button */
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#results-grid .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 
